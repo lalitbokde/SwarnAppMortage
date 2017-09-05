@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounded_corner">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="ठेव तारीख"
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGDRThewTarikh"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="गिरवी क्र."
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGDRGirviKramank"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="रक्कम"
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGDRRakkam"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="नावे"
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGDRNave"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="फोन न."
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGDRFoneNO"
+            android:background="@drawable/rounded_withoutcorner" />
+    </LinearLayout>
+</LinearLayout>

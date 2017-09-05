@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wallpaper">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.75"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="SwarnaApp"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Address :"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Plot No.47G, Himalaya Excellency,"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Near Police Chowki,"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:text="Pratap Nagar,  Nagpur 440022"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Phone : +91 777680113"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Email ID : Info@thethiinker.com"
+                android:typeface="sans"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|left"
+                android:layout_centerInParent="true"
+                android:id="@+id/lblResult"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.75"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.20"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageViewfacebook"
+                android:background="@drawable/ic_action_facebook"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageViewshare"
+                android:background="@drawable/ic_action_shareapp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageViewwebview"
+                android:background="@drawable/ic_action_webview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageViewlocation"
+                android:background="@drawable/ic_action_location"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageViewcall"
+                android:background="@drawable/ic_action_contactbycall"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

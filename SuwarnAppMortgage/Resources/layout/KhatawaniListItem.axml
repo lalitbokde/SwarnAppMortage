@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="गिरवी क्र."
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblGirvikramank"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="नावे"
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblNave"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="फोन नं."
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblFoneNo"
+            android:background="@drawable/rounded_withoutcorner" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="पत्ता"
+            android:typeface="sans"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblPatta"
+            android:background="@drawable/rounded_withoutcorner" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout8">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/linearLayout7"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.4"
+                android:layout_marginTop="2dp"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:text="सुरवातीची तारीख"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/textView2"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_corner" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/txtRSurwatichiTarikh"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/rounded_corner" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="1.5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.4"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="शेवटची तारीख"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/textView3"
+                    android:background="@drawable/rounded_corner" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/txtRShewatchiTarikh"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/rounded_corner" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/linearLayout3">
+                <Button
+                    android:text="नावे"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/btnKPNave"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_gravity="center_vertical|center"
+                    android:gravity="center_vertical|center" />
+                <Button
+                    android:text="जमा"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/btnKPJma"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_gravity="center_vertical|center"
+                    android:gravity="center_vertical|center" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/Divider"
+                android:background="#7F7F7F" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="#FA5000"
+                android:id="@+id/linearLayout4"
+                android:layout_weight="0.4">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lblGSGirvikramank"
+                    android:text="नाव"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_withoutcornerforheader" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.75"
+                    android:text="गिरवी क्रमांक"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lblThewTarikh"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_withoutcornerforheader" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.25"
+                    android:text="वर्णन"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lbWarn"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_withoutcornerforheader" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.75"
+                    android:text="रक्कम"
+                    android:typeface="sans"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lblStithi"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_withoutcornerforheader" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout5">
+                <ListView
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listViewKhatawaniList" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/linearLayout7"
+            android:layout_weight="0.09">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout6">
+                <Button
+                    android:text="एकूण"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.285"
+                    android:id="@+id/btnKPNave"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner" />
+                <Button
+                    android:text="0.0"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".8"
+                    android:id="@+id/btnTotalAmount"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:id="@+id/Divider"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
