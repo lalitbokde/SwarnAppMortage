@@ -79,7 +79,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(total);
+            btnTotal.Text = Convert.ToString(" नावे : " + total);
         }
         public void CustomerNameSearch()
         {
@@ -140,7 +140,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(total);
+            btnTotal.Text = Convert.ToString(" नावे : " + total);
         }
 
         private void BtnJama_Click(object sender, EventArgs e)
@@ -171,7 +171,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(total);
+            btnTotal.Text = Convert.ToString(" जमा : " + total);
         }
 
        

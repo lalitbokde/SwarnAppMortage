@@ -24,7 +24,7 @@ namespace SuwarnAppMortgage.Activities
         TextView txtSurvatichiTarikh, txtShewatchiTarikh;
         Button btnJama, btnNave, btnTotal;
         ListView mListView;
-        Double total = 0;
+        Double total = 0.00;
         String STotal, Datett, d1, d2, StatusAssign;
         List<KhatawaniTapshilNaveJama> Result = new List<KhatawaniTapshilNaveJama>();
 
@@ -59,8 +59,7 @@ namespace SuwarnAppMortgage.Activities
             txtSurvatichiTarikh.Click += TxtSurvatichiTarikh_Click;
 
             txtShewatchiTarikh.AfterTextChanged += TxtShewatchiTarikh_AfterTextChanged;
-            txtSurvatichiTarikh.AfterTextChanged += TxtSurvatichiTarikh_AfterTextChanged;
-            //LoadData();
+            txtSurvatichiTarikh.AfterTextChanged += TxtSurvatichiTarikh_AfterTextChanged;             
         }
 
         private void TxtSurvatichiTarikh_AfterTextChanged(object sender, Android.Text.AfterTextChangedEventArgs e)
@@ -96,7 +95,7 @@ namespace SuwarnAppMortgage.Activities
             try
             {
                 btnNave.RequestFocus();
-                total = 0;
+                total = 0.00;
                 var db = new SQLiteConnection(dbPath);
 
                 tstart = myFormat.Format(fromUser.Parse(d1));
@@ -122,9 +121,16 @@ namespace SuwarnAppMortgage.Activities
             }
             catch { }
 
-
-            btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(total);
+            if (StatusAssign == "unchange")
+            {
+                btnTotal.Text = "0.0";
+                btnTotal.Text = Convert.ToString(" नावे : " + total);
+            }
+            else if (StatusAssign == "Release")
+            {
+                btnTotal.Text = "0.0";
+                btnTotal.Text = Convert.ToString(" जमा : " + total);
+            }
         }
 
         private void TxtShewatchiTarikh_Click(object sender, EventArgs e)
@@ -164,36 +170,7 @@ namespace SuwarnAppMortgage.Activities
             LoadDataDateWise();
            
         }
-
-        public void LoadData()
-        {
-            List<KhatawaniTapshilNaveJama> Result;
-            try
-            {
-                total = 0;
-                var db = new SQLiteConnection(dbPath);
-
-                var data = db.Query<KhatawaniTapshilNaveJama>("SELECT     CM.khatawani_No, GM.GirviRecordNo, GIM.metal_type, GIM.item_type, GIM.Total_Quantity, GIM.gross_wt, GIM.net_wt, GIM.fine_wt, GM.Amount, GM.Date_of_deposit, CM.FullName, CM.Contact_No, CM.Address,GM.Status FROM customer_master AS CM INNER JOIN GirviMaster AS GM ON CM.khatawani_No = GM.khatawani_No INNER JOIN GirviItemMaster AS GIM ON GM.GirviRecordNo = GIM.GirviNo ").ToList();
-
-                Result = data;
-                mListView.Adapter = new RokadAdapter(this, Result);
-
-                for (int i = 0; i < Result.Count; i++)
-                {
-                    STotal = Result[i].Amount.ToString();
-                    total = total + Convert.ToDouble(STotal);
-                }
-
-            }
-            catch (Exception e)
-            {
-                String E = e.ToString();
-            }
-
-            btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(total);
-        }
-
+                                      
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.ItemId == Android.Resource.Id.Home)

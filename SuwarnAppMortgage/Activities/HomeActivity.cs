@@ -157,7 +157,7 @@ namespace SuwarnAppMortgage
                     StartActivity(new Android.Content.Intent(this, typeof(ContactActivity)));
                     break;
                 case (Resource.Id.nav_shareit):
-                    ShareToBrowser("https://play.google.com/store/search?q=thethinker&c=apps&hl=en");
+                    ShareToBrowser("https://play.google.com/store/apps/developer?id=TheThinker");
                     break;
                 case (Resource.Id.nav_settings):
                     StartActivity(new Intent(this, typeof(SettingsActivity)));
