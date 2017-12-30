@@ -141,7 +141,8 @@ namespace SuwarnAppMortgage
                 int amt = Convert.ToInt32(Amount);
                 decimal rate = Convert.ToDecimal(Convert.ToDecimal(InterestRate));
                 decimal dys = Convert.ToDecimal(Convert.ToInt32(noofdays));
-                intAmount = (amt * (rate * 12) * dys) / (100 * 365);
+                //intAmount = (amt * (rate * 12) * dys) / (100 * 365);
+                intAmount = (amt * (rate * 12) * dys) / (365 * 100);
                 //}
             }
             catch { }
