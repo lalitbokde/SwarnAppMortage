@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{C810E350-96EF-4A25-9D68-E11F235210D8}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SuwarnAppMortgage" expanded="True">
+            <Node name="SuwarnAppMortgage" expanded="True">
+              <Node name="Packages" expanded="True" selected="True" />
+              <Node name="Activities" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SuwarnAppMortgage PreferredExecutionTarget="Android.fex4obhekngyeaxw" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dhiraj/Documents/GitHub/SwarnAppMortage/SuwarnAppMortgage/Activities/HomeActivity.cs" relfile="SuwarnAppMortgage/Activities/HomeActivity.cs" line="28" column="1" />
+      <Breakpoint file="/Users/dhiraj/Documents/GitHub/SwarnAppMortage/SuwarnAppMortgage/Activities/HomeActivity.cs" relfile="SuwarnAppMortgage/Activities/HomeActivity.cs" line="107" column="1" />
+      <Breakpoint file="/Users/dhiraj/Documents/GitHub/SwarnAppMortage/SuwarnAppMortgage/Activities/HomeActivity.cs" relfile="SuwarnAppMortgage/Activities/HomeActivity.cs" line="196" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
