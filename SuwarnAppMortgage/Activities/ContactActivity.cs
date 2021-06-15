@@ -44,7 +44,7 @@ namespace SuwarnAppMortgage
         {
             try
             {
-                string telphone = "+917776801113";
+                string telphone = "+917620532541";
                 Intent phone = new Intent(Intent.ActionCall, Android.Net.Uri.Parse(string.Format("tel:{0}", telphone)));
                 StartActivity(phone);
             }
@@ -55,7 +55,7 @@ namespace SuwarnAppMortgage
         {
             try
             {
-                ShareToBrowser("https://www.google.co.in/maps/place/TheThinker/@21.1132124,79.0564577,19z/data=!4m12!1m6!3m5!1s0x3bd4bf842418afdf:0xb0adfdde6baf6fdd!2sTheThinker!8m2!3d21.1132111!4d79.0570049!3m4!1s0x3bd4bf842418afdf:0xb0adfdde6baf6fdd!8m2!3d21.1132111!4d79.0570049?hl=en");
+                ShareToBrowser("https://www.google.com/maps/place/Thinker+steps+technologies+Pvt+LTD/@21.1036422,79.0922616,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4bf469993ed0d:0x90a8709b9692af5d!8m2!3d21.1036344!4d79.0944766");
             }
             catch { }
         }
@@ -64,7 +64,7 @@ namespace SuwarnAppMortgage
         {
             try
             {
-                ShareToBrowser("http://www.thethiinker.com/");
+                ShareToBrowser("https://www.swarnapp.com/");
             }
             catch { }
         }
@@ -88,7 +88,7 @@ namespace SuwarnAppMortgage
         {
             try
             {
-                ShareToBrowser("https://www.facebook.com/TheThiinker-610526002292104/");
+                ShareToBrowser("https://m.facebook.com/SwarnApp-1741221879518718/?_rdr");
             }
             catch { }
         }

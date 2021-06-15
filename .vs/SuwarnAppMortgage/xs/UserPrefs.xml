@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{C810E350-96EF-4A25-9D68-E11F235210D8}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuwarnAppMortgage/Resources/layout/ContactUSlayout.axml">
+    <Files>
+      <File FileName="SuwarnAppMortgage/Resources/layout/ContactUSlayout.axml" Line="78" Column="26" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SuwarnAppMortgage" expanded="True">
             <Node name="SuwarnAppMortgage" expanded="True">
-              <Node name="Packages" expanded="True" selected="True" />
               <Node name="Activities" expanded="True" />
-              <Node name="Resources" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="ContactUSlayout.axml" selected="True" />
+                </Node>
+                <Node name="menu" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -15,7 +22,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SuwarnAppMortgage PreferredExecutionTarget="Android.fex4obhekngyeaxw" />
+  <MonoDevelop.Ide.ItemProperties.SuwarnAppMortgage AndroidDesignerPreferredTheme="MyTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.fex4obhekngyeaxw" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
