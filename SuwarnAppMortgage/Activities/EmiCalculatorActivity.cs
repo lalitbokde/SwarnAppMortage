@@ -98,21 +98,21 @@ namespace SuwarnAppMortgage
                         {
                             txt_Interset = InterestAmount(txtlonRakkam.Text, txtWyajDar.Text, txtEkunDiwas.Text).ToString();
                             txt_TotalAmount = (Convert.ToDouble(txt_Interset) + Convert.ToDouble(txtlonRakkam.Text)).ToString();
-                            tvResult.Text = " लोन रक्कम :  " + txtlonRakkam.Text + "\n" +
-                                            "व्याज रक्कम :  " + txt_Interset + "\n" +
-                                            "एकुण रक्कम :  " + txt_TotalAmount;
+                            tvResult.Text = " Loan Amount :  " + txtlonRakkam.Text + "\n" +
+                                            "Interest amount :  " + txt_Interset + "\n" +
+                                            "Total Amount :  " + txt_TotalAmount;
                         }
                         else
                         {
                             txtWyajDar.RequestFocus();
-                            txtWyajDar.SetError("Please Enter व्याज दर First", icon_error);
+                            txtWyajDar.SetError("Please Enter Interest Rate First", icon_error);
                             //Toast.MakeText(this, "Please Enter Time First", ToastLength.Long).Show();
                         }
                     }
                     else
                     {
                         txtlonRakkam.RequestFocus();
-                        txtlonRakkam.SetError("Please Enter लोन रक्कम First", icon_error);
+                        txtlonRakkam.SetError("Please Enter Loan Amount First", icon_error);
                         //Toast.MakeText(this, "Please Enter Time First", ToastLength.Long).Show();
                     }
                 }

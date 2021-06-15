@@ -20,7 +20,7 @@ using System.IO;
 
 namespace SuwarnAppMortgage
 {
-    [Activity(Label = "गिरवी डेली रेपोर्ट")]
+    [Activity(Label = "Mortgage Daily Report")]
     public class GirviDailyReportActivity : AppCompatActivity
     {
         String d1, d2;
@@ -92,27 +92,24 @@ namespace SuwarnAppMortgage
                             Intent phone = new Intent(Intent.ActionCall, Android.Net.Uri.Parse(string.Format("tel:{0}", telphone)));
                             StartActivity(phone);
                         }
-
                         else
                         {
                             myVib.Vibrate(100);
-                            Toast.MakeText(this, "मोबाईल नंबर चुकीचा आहे.", ToastLength.Short).Show();
+                            Toast.MakeText(this, "Mobile number is incorrect.", ToastLength.Short).Show();
                             return;
                         }
                     }
-
                     else
                     {
                         myVib.Vibrate(100);
-                        Toast.MakeText(this, "मोबाईल नंबर उपलब्ध नाही.", ToastLength.Short).Show();
+                        Toast.MakeText(this, "Mobile number not available.", ToastLength.Short).Show();
                         return;
                     }
                 }
-
                 else
                 {
                     myVib.Vibrate(100);
-                    Toast.MakeText(this, "मोबाईल नंबर उपलब्ध नाही.", ToastLength.Short).Show();
+                    Toast.MakeText(this, "Mobile number not available.", ToastLength.Short).Show();
                     return;
                 }
             }
@@ -143,12 +140,12 @@ namespace SuwarnAppMortgage
             catch { }
 
             Message = (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
-              "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-              "नेट वेट : " + item.net_wt + " gm " + "\n" +
-              "फाईन वेट : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
-              "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-              "नेट वेट : " + item.net_wt + " gm " + "\n" +
-              "फाईन वेट : " + item.fine_wt + " gm ").ToString();
+              "Gross weight : " + item.gross_wt + " gm " + "\n" +
+              "Net weight : " + item.net_wt + " gm " + "\n" +
+              "Fine weight : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
+              "Gross weight : " + item.gross_wt + " gm " + "\n" +
+              "Net weight : " + item.net_wt + " gm " + "\n" +
+              "Fine weight : " + item.fine_wt + " gm ").ToString();
 
             if (item.forwardstatus == "Forward")
             {
@@ -166,12 +163,11 @@ namespace SuwarnAppMortgage
                             "\n" +
                             ForworDetails;
             }
-
             else
             {
                 FullMessage = Message;
             }
-            alert.SetTitle(Html.FromHtml("<font color='#EC407A'>गिरवी डीटेल्स</font>"));
+            alert.SetTitle(Html.FromHtml("<font color='#EC407A'>Mortgage Details</font>"));
             alert.SetMessage(FullMessage);
             alert.SetPositiveButton("OK", (senderAlert, args) =>
             {

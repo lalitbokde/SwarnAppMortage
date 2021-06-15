@@ -13,7 +13,7 @@ using SuwarnAppMortgage.Adapter;
 
 namespace SuwarnAppMortgage.Activities
 {
-    [Activity(Label = "खतावणी लिस्ट")]
+    [Activity(Label = "Accounting List")]
     public class KhatawaniListActivity : AppCompatActivity
     {
         Vibrator myVib;
@@ -140,7 +140,7 @@ namespace SuwarnAppMortgage.Activities
                         else
                         {
                             myVib.Vibrate(100);
-                            Toast.MakeText(this, "मोबाईल नंबर चुकीचा आहे.", ToastLength.Short).Show();
+                            Toast.MakeText(this, "Mobile number is incorrect.", ToastLength.Short).Show();
                             return;
                         }
                     }
@@ -148,7 +148,7 @@ namespace SuwarnAppMortgage.Activities
                     else
                     {
                         myVib.Vibrate(100);
-                        Toast.MakeText(this, "मोबाईल नंबर उपलब्ध नाही आहे.", ToastLength.Short).Show();
+                        Toast.MakeText(this, "Mobile number not available.", ToastLength.Short).Show();
                         return;
                     }
                 }
@@ -156,7 +156,7 @@ namespace SuwarnAppMortgage.Activities
                 else
                 {
                     myVib.Vibrate(100);
-                    Toast.MakeText(this, "मोबाईल नंबर उपलब्ध नाही आहे.", ToastLength.Short).Show();
+                    Toast.MakeText(this, "Mobile number not available.", ToastLength.Short).Show();
                     return;
                 }
             }

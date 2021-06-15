@@ -14,7 +14,7 @@ using SQLite;
 
 namespace SuwarnAppMortgage.Activities
 {
-    [Activity(Label = "गिरवी सोडवा")]
+    [Activity(Label = "Release The Mortgage")]
     public class GirviSodvaActivity : AppCompatActivity
     {
         SettingMobileApp _ObjSettingMobileAppModel = new SettingMobileApp();
@@ -90,19 +90,19 @@ namespace SuwarnAppMortgage.Activities
                 TotalAmount = (Convert.ToDouble(Interset) + Convert.ToDouble(GirviNO.Amount.ToString())).ToString();
                 
 
-                Message = (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" + 
-               "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-               "नेट वेट : " + item.net_wt + " gm " + "\n" +
-               "फाईन वेट : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
-               "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-               "नेट वेट : " + item.net_wt + " gm " + "\n" +
-               "फाईन वेट : " + item.fine_wt + " gm ").ToString();
+                Message = (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
+               "Gross weight : " + item.gross_wt + " gm " + "\n" +
+               "Net weight : " + item.net_wt + " gm " + "\n" +
+               "Fine weight : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
+               "Gross weight : " + item.gross_wt + " gm " + "\n" +
+               "Net weight : " + item.net_wt + " gm " + "\n" +
+               "Fine weight : " + item.fine_wt + " gm ").ToString();
 
-                Calculation = ("गिरवी रक्कम : "+ GirviNO.Amount.ToString() + "\n"+
-                    "व्याज टक्के : " + GirviNO.interset_rate.ToString()+ "\n"+
-                    "एकूण दिवस : " + EkunDiwas + "\n"+
-                    "व्याज रक्कम : " + Interset +"\n"+ 
-                    "एकूण भरावयाची रक्कम : " + TotalAmount).ToString();
+                Calculation = ("Mortgage amount : " + GirviNO.Amount.ToString() + "\n"+
+                    "Percentage of interest : " + GirviNO.interset_rate.ToString()+ "\n"+
+                    "Total days : " + EkunDiwas + "\n"+
+                    "Interest amount : " + Interset +"\n"+
+                    "The total amount to be paid : " + TotalAmount).ToString();
 
                 MessageFull = Message + "\n"+
                               "\n" +
@@ -117,11 +117,11 @@ namespace SuwarnAppMortgage.Activities
             Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
             if (GirviNO.Status.ToString().Trim() == "Release")
             {
-                alert.SetTitle(Html.FromHtml("<font color='#EC407A'>गिरवी रीलीज डीटेल्स</font>"));
+                alert.SetTitle(Html.FromHtml("<font color='#EC407A'>Mortgage release details</font>"));
             }
             else
             {
-                alert.SetTitle(Html.FromHtml("<font color='#EC407A'>गिरवी डीटेल्स</font>"));
+                alert.SetTitle(Html.FromHtml("<font color='#EC407A'>Mortgage details</font>"));
             }
             // alert.SetTitle("Confirm Start Audit");
             alert.SetMessage(MessageFull);

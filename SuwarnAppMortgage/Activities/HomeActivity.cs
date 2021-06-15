@@ -16,7 +16,7 @@ using System.Linq;
 
 namespace SuwarnAppMortgage
 {
-    [Activity(Label = "स्वर्ण ऐप Mortgage", MainLauncher = true)]
+    [Activity(Label = "SwarnApp Mortgage", MainLauncher = true)]
     public class HomeActivity : AppCompatActivity
     {
         SettingMobileApp _ObjSettingMobileAppModel = new SettingMobileApp();

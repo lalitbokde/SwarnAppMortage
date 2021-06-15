@@ -12,7 +12,7 @@ using SuwarnAppMortgage.Adapter;
 
 namespace SuwarnAppMortgage.Activities
 {
-    [Activity(Label = "खतावणी तपशील")]
+    [Activity(Label = "Account Details")]
     public class KhatawaniTapshilActivity : AppCompatActivity
     {
 
@@ -79,7 +79,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(" नावे : " + total);
+            btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
         }
         public void CustomerNameSearch()
         {
@@ -140,7 +140,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(" नावे : " + total);
+            btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
         }
 
         private void BtnJama_Click(object sender, EventArgs e)
@@ -171,7 +171,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(" जमा : " + total);
+            btnTotal.Text = Convert.ToString(" JAMA(DEBIT) : " + total);
         }
 
        

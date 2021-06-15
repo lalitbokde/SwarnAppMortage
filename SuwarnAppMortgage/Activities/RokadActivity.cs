@@ -18,7 +18,7 @@ using Android.Graphics.Drawables;
 
 namespace SuwarnAppMortgage.Activities
 {
-    [Activity(Label = "रोकड")]
+    [Activity(Label = "Cash Book")]
     public class RokadActivity : AppCompatActivity
     {
         TextView txtSurvatichiTarikh, txtShewatchiTarikh;
@@ -124,12 +124,12 @@ namespace SuwarnAppMortgage.Activities
             if (StatusAssign == "unchange")
             {
                 btnTotal.Text = "0.0";
-                btnTotal.Text = Convert.ToString(" नावे : " + total);
+                btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
             }
             else if (StatusAssign == "Release")
             {
                 btnTotal.Text = "0.0";
-                btnTotal.Text = Convert.ToString(" जमा : " + total);
+                btnTotal.Text = Convert.ToString(" JAMA(DEBIT) : " + total);
             }
         }
 

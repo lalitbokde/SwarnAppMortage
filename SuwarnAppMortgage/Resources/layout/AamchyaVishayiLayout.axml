@@ -1,247 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <include
-        layout="@layout/app_bar" />
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:id="@+id/Divider"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="3dp" />
-    <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="5"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp">
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1"
-            android:hint="प्रयत्न आमचे प्रगती तुमची"
-            android:id="@+id/autoKSearch"
-            android:gravity="center"
-            android:textSize="19dp"
-            android:textStyle="bold"
-            android:background="#D2DF2F"
-            android:textColor="#FF0000"
-            android:layout_marginTop="1.5dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.18"
-            android:text="आमच्या सोनार बंधू करीता आमच्या कम्प्लीट ज्वेलरी सोल्यूशन सिस्टम "
-            android:typeface="sans"
-            android:gravity="center_vertical|center"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textColor="#ffffff"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textStyle="bold"
-            android:background="@drawable/rounded_withoutcornerforheader"
-            android:layout_marginTop="4.0dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.17"
-            android:text="संपूर्ण ज्वेलरी व्यवसाय मैनेजमेंट सॉफटवेयर आता एकाउंटिंग सोडा आणि मैनेजमेंट सुरु करा."
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="18dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="कस्टमर रिटेल , सेल, परचेस रेकॉर्ड"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="18dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="डेली, मंथली, एयरली रिपोर्ट्स"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="18dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="कारागिर एकाउंटिंग"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="स्टोक मैनेजमेंट, बारकोड"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="व्यापारी एकाउंटिंग"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="गाहणी मैनेजमेंट"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="18dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.4"
-            android:text="हे सर्व आपल्या लैपटोप आणि मोबईल साठी मराठी, हिंदी आणि इंग्लिश मध्ये उपलब्ध आहे. गाहणी सॉफ्टवेअरच्यामदतीने तुमच्या रोकड, भांडवल आणि कॅश इन हैन्ड नियंत्रण करा आणि आनंदाने व्यापार करा... "
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="18dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="गहाणी सॉफ्टवेअरची वैशिष्ट्येए"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="आटोमेटिक जनरेट रोकड भांडवल आणि खातावनी"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="ओपेनिंग एंड क्लोजिंग स्टेटमेंट"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:text="केश इन हैन्ड रिपोर्ट"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.08"
-            android:typeface="sans"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="center_vertical|left"
-            android:layout_centerInParent="true"
-            android:id="@+id/lblResult"
-            android:textSize="19dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-    </LinearLayout>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include
+		layout="@layout/app_bar" />
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:id="@+id/Divider"
+		android:background="#FFFFFF"
+		android:layout_marginBottom="3dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="5"
+		android:paddingLeft="2dp"
+		android:paddingRight="2dp">
+		<TextView
+			android:paddingVertical="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="Try our progress is yours"
+			android:id="@+id/autoKSearch"
+			android:gravity="center"
+			android:textSize="19dp"
+			android:textStyle="bold"
+			android:background="#D2DF2F"
+			android:textColor="#FF0000"
+			android:layout_marginTop="1.5dp" />
+		<TextView
+			android:paddingVertical="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Our complete jewelery solution system for our Sonar brothers "
+			android:typeface="sans"
+			android:gravity="center_vertical|center"
+			android:layout_gravity="center_vertical|left"
+			android:layout_centerInParent="true"
+			android:id="@+id/lblResult"
+			android:textColor="#ffffff"
+			android:textSize="19dp"
+			android:textStyle="bold"
+			android:background="@drawable/rounded_withoutcornerforheader"
+			android:layout_marginTop="4.0dp" />
+		<LinearLayout
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_marginHorizontal="10dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:paddingVertical="5dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Complete Jewelry Business Management Software Leave accounting now and start management."
+				android:typeface="sans"
+				android:gravity="center_vertical|left"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblResult"
+				android:textSize="18dp"
+				android:textStyle="bold" />
+			<TextView
+				android:paddingVertical="5dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Customer Retail, Sale, Purchase Record. \nDaily, Monthly, Early Reports. \nArtisan Accounting. \nStock management, Barcodes. \nMerchant Accounting. \nMortgage management."
+				android:typeface="sans"
+				android:gravity="center_vertical|left"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblResult"
+				android:textSize="18dp"/>
+
+			<TextView
+				android:paddingVertical="5dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="It is available in Marathi, Hindi and English for your laptop and mobile. Control your cash, capital and cash in hand with the help of mortgage software and trade happily ..."
+				android:typeface="sans"
+				android:gravity="center_vertical|left"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblResult"
+				android:textSize="18dp"
+				android:textStyle="bold" />
+			<TextView
+				android:paddingVertical="5dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Features of mortgage software"
+				android:typeface="sans"
+				android:gravity="center_vertical|left"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblResult"
+				android:textSize="19dp"
+				android:textStyle="bold" />
+			<TextView
+				android:paddingVertical="5dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Automatically generate cash capital and accounting. \nOpening and closing statement. \nCash in hand report."
+				android:typeface="sans"
+				android:gravity="center_vertical|left"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblResult"
+				android:textSize="19dp" />
+		</LinearLayout>
+	</LinearLayout>
 </LinearLayout>
