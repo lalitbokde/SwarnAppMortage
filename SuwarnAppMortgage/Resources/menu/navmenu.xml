@@ -4,18 +4,18 @@
     <item
       android:id="@+id/nav_about_us"
       android:icon="@drawable/ic_about_us"
-      android:title="आमच्या विषयी" />
+      android:title="@string/About" />
     <item
       android:id="@+id/nav_contact"
       android:icon="@drawable/ic_contact"
-      android:title="संपर्क" />
+      android:title="@string/Contact" />
     <item
      android:id="@+id/nav_shareit"
      android:icon="@drawable/ic_share"
-     android:title="अधिक ऐप" />
+     android:title="More App" />
     <item
     android:id="@+id/nav_settings"
     android:icon="@drawable/ic_settings"
-    android:title="सेटिंग" />
+    android:title="@string/Settings" />
   </group> 
 </menu>
