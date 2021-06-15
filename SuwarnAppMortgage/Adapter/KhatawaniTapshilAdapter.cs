@@ -57,8 +57,8 @@ namespace SuwarnAppMortgage.Adapter
                 view.FindViewById<TextView>(Resource.Id.lblKTGirviKramank).Text = item.GirviRecordNo == null ? "" : item.GirviRecordNo.ToString();
                 view.FindViewById<TextView>(Resource.Id.lblKTGiraviTarikh).Text = item.Date_of_deposit == null ? "" : item.Date_of_deposit.ToString();
                 view.FindViewById<TextView>(Resource.Id.lblKTWarnan).Text = (item.metal_type +" "+ item.item_type + " (" + item.Total_Quantity + "nos.) " +
-                    "ग्रॉस वेट : " + item.gross_wt +" gm "+ "नेट वेट : " + item.net_wt + " gm " + "फाईन वेट : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type +
-                    " " + item.item_type + " (" + item.Total_Quantity + " nos.) " + "ग्रॉस वेट : " + item.gross_wt + " gm " + "नेट वेट : " + item.net_wt + " gm " + "फाईन वेट : " +
+                    "Gross weight : " + item.gross_wt +" gm "+ "Net weight : " + item.net_wt + " gm " + "Fine weight : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type +
+                    " " + item.item_type + " (" + item.Total_Quantity + " nos.) " + "Gross weight : " + item.gross_wt + " gm " + "Net weight : " + item.net_wt + " gm " + "Fine weight : " +
                     item.fine_wt + " gm ").ToString();
                 view.FindViewById<TextView>(Resource.Id.lblKTRakkam).Text = item.Amount == null ? "" : item.Amount.ToString();
                 

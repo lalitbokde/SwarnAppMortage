@@ -58,12 +58,12 @@ namespace SuwarnAppMortgage.Adapter
 
 
                 Message = (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
-               "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-               "नेट वेट : " + item.net_wt + " gm " + "\n" +
-               "फाईन वेट : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
-               "ग्रॉस वेट : " + item.gross_wt + " gm " + "\n" +
-               "नेट वेट : " + item.net_wt + " gm " + "\n" +
-               "फाईन वेट : " + item.fine_wt + " gm ").ToString();
+               "Gross weight : " + item.gross_wt + " gm " + "\n" +
+               "Net weight : " + item.net_wt + " gm " + "\n" +
+               "Fine weight : " + item.fine_wt + " gm ") == null ? "" : (item.metal_type + " " + item.item_type + " (" + item.Total_Quantity + "nos.) " + "\n" +
+               "Gross weight : " + item.gross_wt + " gm " + "\n" +
+               "Net weight : " + item.net_wt + " gm " + "\n" +
+               "Fine weight : " + item.fine_wt + " gm ").ToString();
 
 
                 view.FindViewById<TextView>(Resource.Id.lblRNav).Text = item.FullName == null ? "" : item.FullName.ToString();
