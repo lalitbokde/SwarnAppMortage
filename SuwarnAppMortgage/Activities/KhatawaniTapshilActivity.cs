@@ -79,7 +79,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
+            btnTotal.Text = Convert.ToString(" NAME(CREDIT) : " + total);
         }
         public void CustomerNameSearch()
         {
@@ -140,7 +140,7 @@ namespace SuwarnAppMortgage.Activities
             }
 
             btnTotal.Text = "0.0";
-            btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
+            btnTotal.Text = Convert.ToString(" NAME(CREDIT) : " + total);
         }
 
         private void BtnJama_Click(object sender, EventArgs e)

@@ -1,145 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
-    <include
-        layout="@layout/app_bar" />
-    <ScrollView
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center">
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="508.5dp"
-                android:gravity="center"
-                android:layout_alignParentBottom="true"
-                android:minWidth="25px"
-                android:minHeight="25px">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dip"
-                    android:layout_weight="1"
-                    android:paddingLeft="2dp"
-                    android:paddingRight="2dp">
-                    <AutoCompleteTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Search Name"
-                        android:id="@+id/autoGSSearch"
-                        android:ems="50"
-                        android:gravity="center" />
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_width="fill_parent"
-                        android:layout_height="40dip">
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Reeipt no."
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblGSGirvikramank"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Amount"
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblRakkam"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Deposit date"
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblThewTarikh"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Interest (%)"
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblWyajTakke"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Duration"
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblKalawadhi"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                        <TextView
-                            android:layout_width="0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:text="Status"
-                            android:typeface="sans"
-                            android:gravity="center_vertical|center"
-                            android:layout_gravity="center_vertical|left"
-                            android:layout_centerInParent="true"
-                            android:id="@+id/lblStithi"
-                            android:background="@drawable/rounded_withoutcornerforheader"
-                            android:textColor="#ffffff" />
-                    </LinearLayout>
-                    <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="2.5dp"
-                        android:id="@+id/Divider"
-                        android:background="#FFFFFF" />
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_width="fill_parent"
-                        android:layout_height="0dip"
-                        android:layout_weight="3"
-                        android:minWidth="25px"
-                        android:minHeight="25px">
-                        <ListView
-                            android:minWidth="25px"
-                            android:minHeight="25px"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/listViewKhatawaniList" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+	<include
+		layout="@layout/app_bar" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:paddingLeft="2dp"
+		android:paddingRight="2dp">
+		<AutoCompleteTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Search Name"
+			android:id="@+id/autoGSSearch"
+			android:ems="50"
+			android:gravity="center" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip">
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Reeipt no."
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblGSGirvikramank"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Amount"
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblRakkam"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Deposit date"
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblThewTarikh"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Interest (%)"
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblWyajTakke"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Duration"
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblKalawadhi"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="Status"
+				android:typeface="sans"
+				android:gravity="center_vertical|center"
+				android:layout_gravity="center_vertical|left"
+				android:layout_centerInParent="true"
+				android:id="@+id/lblStithi"
+				android:background="@drawable/rounded_withoutcornerforheader"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="2.5dp"
+			android:id="@+id/Divider"
+			android:background="#FFFFFF" />
+		<LinearLayout
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="3"
+			android:minWidth="25px"
+			android:minHeight="25px">
+			<ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/listViewKhatawaniList" />
+		</LinearLayout>
+	</LinearLayout>
 </LinearLayout>

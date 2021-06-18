@@ -124,7 +124,7 @@ namespace SuwarnAppMortgage.Activities
             if (StatusAssign == "unchange")
             {
                 btnTotal.Text = "0.0";
-                btnTotal.Text = Convert.ToString(" NAME(DEBIT) : " + total);
+                btnTotal.Text = Convert.ToString(" NAME(CREDIT) : " + total);
             }
             else if (StatusAssign == "Release")
             {
