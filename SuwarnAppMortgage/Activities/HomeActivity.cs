@@ -1,5 +1,6 @@
 ﻿
 
+using Android;
 using Android.App;
 using Android.Content;
 using Android.Database.Sqlite;
@@ -7,18 +8,26 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using SQLite;
 using SuwarnAppMortgage.Activities;
+using System;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace SuwarnAppMortgage
 {
     [Activity(Label = "स्वर्ण ऐप Mortgage", MainLauncher = true)]
     public class HomeActivity : AppCompatActivity
     {
+        static string[] PermissionsStorage = { Manifest.Permission.ReadExternalStorage,
+            Manifest.Permission.WriteExternalStorage,
+         Manifest.Permission.CallPhone,
+         Manifest.Permission.Vibrate,};
+
         SettingMobileApp _ObjSettingMobileAppModel = new SettingMobileApp();
         DrawerLayout drawerLayout;
         NavigationView navigationView;
@@ -43,7 +52,7 @@ namespace SuwarnAppMortgage
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
 
             //Create ActionBarDrawerToggle button and add it to the toolbar
-           var drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, Resource.String.open_drawer, Resource.String.close_drawer);
+            var drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, Resource.String.open_drawer, Resource.String.close_drawer);
             drawerLayout.SetDrawerListener(drawerToggle);
             drawerToggle.SyncState();
 
@@ -69,65 +78,71 @@ namespace SuwarnAppMortgage
         private void GirviDailyReport_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(GirviDailyReportActivity));
-            this.StartActivity(intent);  
+            this.StartActivity(intent);
         }
 
         private void KhatawaniTapshil_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(KhatawaniTapshilActivity));
-            this.StartActivity(intent);           
+            this.StartActivity(intent);
         }
 
         private void GirviSodwa_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(GirviSodvaActivity));
-            this.StartActivity(intent);         
+            this.StartActivity(intent);
         }
 
         private void Rokad_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(RokadActivity));
-            this.StartActivity(intent);      
+            this.StartActivity(intent);
         }
 
         private void KhatawaniList_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(KhatawaniListActivity));
-            this.StartActivity(intent);           
+            this.StartActivity(intent);
         }
 
         private void EmiCalculator_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(EmiCalculatorActivity));
-            this.StartActivity(intent);       
+            this.StartActivity(intent);
         }
 
         public void onCreateDatabase()
         {
-            var pathToDatabase = Path.Combine(path, "JewelleryMortgageLocalDB.db");
-            SQLiteDatabase sqlDB = SQLiteDatabase.OpenOrCreateDatabase(pathToDatabase, null);
-            string query;
-            query = "CREATE TABLE IF NOT EXISTS `SettingMobileApp` (`SrNo`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	`CalculationDaysDifference`	INTEGER NOT NULL DEFAULT 0);";
-            sqlDB.ExecSQL(query);
-
-
-            var db = new SQLiteConnection(pathToDatabase);
-            SettingMobileApp data = db.Query<SettingMobileApp>("Select * from SettingMobileApp where SrNo = '1'").FirstOrDefault();
-            if (data != null)
+            try
             {
-                _ObjSettingMobileAppModel.CalculationDaysDifference = data.CalculationDaysDifference;
+                var pathToDatabase = Path.Combine(path, "JewelleryMortgageLocalDB.db");
+                SQLiteDatabase sqlDB = SQLiteDatabase.OpenOrCreateDatabase(pathToDatabase, null);
+                string query;
+                query = "CREATE TABLE IF NOT EXISTS `SettingMobileApp` (`SrNo` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `CalculationDaysDifference` INTEGER NOT NULL DEFAULT 0);";
+                sqlDB.ExecSQL(query);
+                var db = new SQLiteConnection(pathToDatabase);
+                Console.WriteLine("SettingMobileApp : " + db);
+                SettingMobileApp data = db.Query<SettingMobileApp>("Select * from SettingMobileApp where SrNo = '1'").FirstOrDefault();
+                Console.WriteLine("SettingMobileApp : " + data.CalculationDaysDifference.ToString());
+                if (data != null)
+                {
+                    _ObjSettingMobileAppModel.CalculationDaysDifference = data.CalculationDaysDifference;
+                }
+                else
+                {
+                    _ObjSettingMobileAppModel.CalculationDaysDifference = 0;
+
+                    db.Insert(_ObjSettingMobileAppModel);
+                    db.Commit();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                _ObjSettingMobileAppModel.CalculationDaysDifference = 0;
-
-                db.Insert(_ObjSettingMobileAppModel);
-                db.Commit();
+                System.Console.WriteLine("Exception : " + ex);
             }
-
         }
 
-      
+
 
         private void ShareToBrowser(string url)
         {
@@ -190,11 +205,20 @@ namespace SuwarnAppMortgage
             }
         }
 
+        private async Task<bool> checkPermission()
+        {
+            Android.Support.V4.App.ActivityCompat.RequestPermissions(this, PermissionsStorage, 1);
+            return await Task.FromResult(true);
+        }
+
+        //public string ResourcesBaseUrl => "file:///android_asset/";
 
         protected override void OnResume()
         {
             SupportActionBar.SetTitle(Resource.String.app_name);
-            onCreateDatabase();
+            var isPermission = checkPermission().Result;
+            if (isPermission)
+                onCreateDatabase();
             base.OnResume();
         }
 

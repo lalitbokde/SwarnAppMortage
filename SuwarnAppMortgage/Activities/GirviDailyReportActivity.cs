@@ -28,8 +28,7 @@ namespace SuwarnAppMortgage
         List<customer_master> Result = new List<customer_master>();
         customer_master ContactNo = new customer_master();
         Vibrator myVib;
-        String path, filename;
-        //string dbPath = "/storage/emulated/0/JewelleryDB.db";
+        string filename = "/storage/emulated/0/JewelleryDB.db";
         TextView txtSurvatichiTarikh, txtShewatchiTarikh;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -64,8 +63,8 @@ namespace SuwarnAppMortgage
             mListView.ItemClick += MListView_ItemClick;
             mListView.ItemLongClick += MListView_ItemLongClick;
 
-             path = global::Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
-             filename = Path.Combine(path.ToString(), "JewelleryDB.db");
+           
+            
         }
 
         private void MListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
@@ -262,6 +261,8 @@ namespace SuwarnAppMortgage
             try
             {
                 var db = new SQLiteConnection(filename);
+                Console.WriteLine("filename : " + filename);
+                Console.WriteLine("db : " + db);
                 var data = db.Query<customer_master>("SELECT  customer_master.FullName, customer_master.Address,customer_master.Contact_No,GirviMaster.receipt_no,GirviMaster.interset_rate, GirviMaster.Amount,GirviMaster.Date_of_deposit, GirviMaster.khatawani_No, GirviMaster.duration, GirviMaster.GirviRecordNo,customer_master.PageNo FROM  customer_master INNER JOIN GirviMaster ON customer_master.khatawani_No = GirviMaster.khatawani_No WHERE (status='unchange')").ToList();
 
                 Result1 = data;
@@ -270,6 +271,7 @@ namespace SuwarnAppMortgage
             catch (Exception e)
             {
                 String E = e.ToString();
+                Console.WriteLine("Exception : " + E, ConsoleColor.DarkRed);
             }
         }
 
