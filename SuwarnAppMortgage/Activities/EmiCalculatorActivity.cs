@@ -197,32 +197,47 @@ namespace SuwarnAppMortgage
 
         private void TxtSodawnyachiTarikh_Click(object sender, EventArgs e)
         {
-
-            InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
-            inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
-
-
-            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            try
             {
-                txtSodawnyachiTarikh.Text = time.ToString("dd-MM-yyyy");
-            });
+                InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
+                if (this.CurrentFocus != null)
+                    inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
 
-            frag.Show(FragmentManager, DatePickerFragment.TAG);
+                DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+                {
+                    txtSodawnyachiTarikh.Text = time.ToString("dd-MM-yyyy");
+                });
+
+                frag.Show(FragmentManager, DatePickerFragment.TAG);
+            }
+            catch (Exception es)
+            {
+                Console.WriteLine("Exception : " + es, ConsoleColor.DarkRed);
+            }
         }
 
 
 
         private void TxtJamaTarikh_Click(object sender, EventArgs e)
         {
-            InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
-            inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
-
-            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            try
             {
-                txtJamaTarikh.Text = time.ToString("dd-MM-yyyy");
-            });
+                InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
 
-            frag.Show(FragmentManager, DatePickerFragment.TAG);
+                if (this.CurrentFocus != null)
+                    inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
+
+                DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+                {
+                    txtJamaTarikh.Text = time.ToString("dd-MM-yyyy");
+                });
+
+                frag.Show(FragmentManager, DatePickerFragment.TAG);
+            }
+            catch (Exception es)
+            {
+                Console.WriteLine("Exception : " + es, ConsoleColor.DarkRed);
+            }
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
